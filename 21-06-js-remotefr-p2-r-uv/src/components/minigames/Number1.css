@@ -1,0 +1,62 @@
+.game{
+margin-left: auto;
+margin-right: auto;
+
+}
+
+.game-title{
+  text-align: center;
+  margin-top: 2%;
+}
+.game-container{
+    padding-top: 10%;
+}
+
+button, input{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#start-button{
+    padding: 10px 30px;
+    border-radius: 10%;
+    display: none;
+}
+#verifiedInput{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    padding: 1%;
+}
+#game-button{
+margin-left: auto;
+margin-right: auto;
+margin-top: 5%;
+padding: 7px 20px;
+}
+
+.game-input{
+    padding-top: 20%;
+}
+
+@keyframes disapear{
+    0%{
+      opacity: 1;
+    }
+    50%{
+      opacity: 0.5;
+    }
+    100%{
+      display: none;
+      opacity: 0;
+    }
+    
+  }
+  .game-number{
+    text-align: center;
+    font-size: 40px;
+    animation-name: disapear;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    }

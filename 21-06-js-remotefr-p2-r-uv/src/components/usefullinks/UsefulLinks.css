@@ -1,0 +1,121 @@
+.cards_lists {
+   z-index: 0;
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+   flex-direction: row-reverse; 
+ }
+
+ .cards {
+   margin: 30px auto;
+   width: 350px;
+   height: 350px;
+   border-radius: 40px;
+   box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+   cursor: pointer;
+   transition: 0.4s;
+   margin-left: 20px;
+   margin-right: 20px;
+ }
+ 
+ .cards .cards_images {
+   width: inherit;
+   height: inherit;
+   border-radius: 40px;
+ }
+
+ .img_logo {
+   width: 100%;
+   height: 100%;
+   border-radius: 40px;
+   object-fit: unset;
+ }
+ 
+ .cards:hover {
+   transform: scale(0.9, 0.9);
+   box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+     -5px -5px 30px 15px rgba(0,0,0,0.22);
+ }
+ 
+ .cards_presentations {
+   color: black;
+   text-align: center;
+   margin-left: 10%;
+   margin-right: 10%;
+   margin-top: 3%;
+ }
+
+.reverses{
+ flex-direction: row;
+}
+
+ .descriptions_links{
+  margin-top: 30px;
+  padding-left: 150px;
+  padding-right: 150px;
+  justify-content: center;
+  font-size: 23px;
+  text-align: justify;
+}
+
+ .titles_links {
+   text-align: center;
+   font-size: 28px;
+ }
+
+ @media screen and (min-width:375px) and (max-width: 736px) {
+  .cards_lists {
+   display: flex;
+   flex-direction: column-reverse;
+   }
+
+   .descriptions_links{
+    text-align: justify;
+    padding-right: 0%;
+    padding-left: 0%;
+    margin-left: auto;
+    margin-right: auto;
+   }
+  
+   .cards{
+     margin-left: auto;
+     margin-right: auto;
+   }
+   .cards_presentations {
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+   }
+ }
+
+ @media screen and (min-width:768px) and (max-width: 1024px){
+  .cards_lists {
+    display: flex;
+    flex-direction: column-reverse;
+    }
+
+    .descriptions_links{
+     text-align: justify;
+     padding-right: 0%;
+     padding-left: 0%;
+     margin-left: auto;
+     margin-right: auto;
+    }
+   
+    .cards{
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cards_presentations {
+     margin-left: auto;
+     margin-right: auto;
+     padding-right: 10px;
+     padding-left: 10px;
+    }
+ }
+
+
+
+

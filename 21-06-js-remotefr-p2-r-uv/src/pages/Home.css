@@ -1,0 +1,228 @@
+body{
+  background-color:pink;
+}
+
+.home{
+  height: 120vh;
+}
+
+.home-text{
+  justify-content: center;
+  text-align: center;
+  margin: 0% 5%;
+}
+
+.home-text-2{
+margin-top: 10%;
+}
+
+.link-text{
+text-decoration: none;
+}
+
+.carrousel
+{   
+    perspective: 1%;  
+    perspective: 1%;
+    width: 1%;
+    height: 1%;
+    position: relative;
+    margin-left: 30%;
+    margin-right: 0%;
+    
+}
+
+@keyframes carrousel
+{
+  from
+  {
+      transform: rotateY( 360deg ) translateZ( 100px ) rotateY( -360deg );
+      transform: rotateY( 360deg ) translateZ( 100px ) rotateY( -360deg );
+      z-index: 10;
+      opacity: 0.9
+  }
+  50%
+  {
+    z-index: -10;
+  }
+  to 
+  {
+    transform: rotateY( 0deg ) translateZ( 100px ) rotateY( 0deg );
+    transform: rotateY( 0deg ) translateZ( 100px ) rotateY( 0deg );
+      z-index: 10;
+      opacity: 0.9
+  }
+}
+
+@keyframes carrousel
+{
+  from
+  {
+      transform: rotateY( 360deg ) translateZ( 100px ) rotateY( -360deg );
+      z-index: 10;
+      opacity: 0.9
+  }
+  50%
+  {
+    z-index: -10;
+  }
+  to
+  {
+      transform: rotateY( 0deg ) translateZ( 100px ) rotateY( 0deg );
+      z-index: 10;
+      opacity: 0.9
+  }
+}
+
+.cards_homepage
+{
+  width: 350px;
+  height: 350px;
+  background-color: #ffffff;
+  font-size: 40px;
+  opacity: 0;
+  position: absolute;
+  top:35px;
+  left:100px;
+  right: 100px;
+  border: solid darkgray 2px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px rgba(0,0,0,.5);
+  text-align: center;
+  animation-name: carrousel;
+  animation-name: carrousel;
+  animation-duration: 8s;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-timing-function: linear;
+  background-size: cover;
+  }
+
+.cards_homepage:hover
+{
+  border: solid #4466cc 3px;
+  box-shadow: 0px 0px 10px #4466cc;
+}
+
+#c7
+{
+background-image: url(https://zupimages.net/up/21/34/3qvz.jpg);
+
+}
+
+#c6
+{
+  background-image: url(https://zupimages.net/up/21/34/wv0l.jpg);
+    animation-delay: -1s;
+    animation-delay: -1s;
+}
+#c5
+{
+  background-image: url(https://zupimages.net/up/21/34/tj4c.png);
+    animation-delay: -2s;
+    animation-delay: -2s;
+}
+#c4
+{
+  background-image: url(https://zupimages.net/up/21/34/dlxc.jpg);
+    animation-delay: -3s;
+    animation-delay: -3s;
+}
+#c3
+{
+  background-image: url(https://zupimages.net/up/21/34/m3zc.png);
+    animation-delay: -4s;
+    animation-delay: -4s;
+}
+#c2
+{
+  background-image: url(https://zupimages.net/up/21/34/s13e.png);
+    animation-delay: -5s;
+    animation-delay: -5s;
+}
+#c1
+{
+  background-image: url(https://zupimages.net/up/21/34/rpc2.jpg);
+    animation-delay: -6s;
+    animation-delay: -6s;
+}
+#c0
+{
+  background-image: url(https://zupimages.net/up/21/34/onpx.jpg);
+    animation-delay: -7s;
+    animation-delay: -7s;
+}
+      
+@media screen and (min-width:768px) and (max-width: 1024px){
+  .cards_homepage
+  {
+    width: 350px;
+    height: 350px;
+    background-color: #ffffff;
+    font-size: 40px;
+    opacity: 0;
+    position: absolute;
+    top:35px;
+    left: 0;
+    right: 300px;
+    border: solid darkgray 2px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,.5);
+    text-align: center;
+    animation-name: carrousel;
+    animation-name: carrousel;
+    animation-duration: 8s;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-timing-function: linear;
+    
+    }
+  }
+
+
+  .intro {
+  margin-top: 450px;
+  }
+
+@media screen and (min-width:375px) and (max-width: 812px){
+  .home {
+    height: 115vh;
+  }
+  .intro {
+    margin-top: 280px;
+    
+  }
+
+  .home-text-2 {
+    margin: 2rem;
+  }
+  .cards_homepage
+  {
+    width: 40vw;
+    height: 25vh;
+    background-color: #ffffff;
+    font-size: 40px;
+    opacity: 0;
+    position: absolute;
+    top:35px;
+    left: 0;
+    right: 300px;
+    border: solid darkgray 2px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,.5);
+    text-align: center;
+    animation-name: carrousel;
+    animation-name: carrousel;
+    animation-duration: 8s;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-timing-function: linear;
+    
+    }
+}

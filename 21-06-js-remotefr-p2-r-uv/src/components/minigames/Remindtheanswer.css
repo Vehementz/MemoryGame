@@ -1,0 +1,82 @@
+@keyframes disapear{
+    0%{
+      opacity: 1;
+    }
+    50%{
+      opacity: 0.5;
+    }
+    100%{
+      display: none;
+      opacity: 0;
+    }
+    
+  }
+  @keyframes apear{
+    0%{
+      opacity: 0;
+      display: none;
+    }
+    90%{
+      opacity: 0;
+      display: none;
+    }
+    100%{
+
+      opacity: 1;
+    }
+  }
+
+.question-text{
+    text-align: center;
+    font-size: 40px;
+    animation-name: disapear;
+    animation-duration: 10000ms;
+    animation-fill-mode: forwards;
+    margin-top: 10%;
+}
+.question{
+    text-align: center;
+    font-size: 40px;
+    animation-name: apear;
+    animation-duration: 13000ms;
+    animation-fill-mode: forwards;
+    margin-top: 10%;
+}
+.firstPhrase{
+  text-align: center;
+  font-size: 40px;
+  animation-name: apear;
+  animation-duration: 5000ms;
+  animation-fill-mode: forwards;
+  margin-top: 10%;
+}
+.firstQuestion{
+  text-align: center;
+  font-size: 40px;
+  animation-name: disapear;
+  animation-duration: 5000ms;
+  animation-fill-mode: forwards;
+  margin-top: 10%;
+}
+.answerbutton{
+  animation-name: apear;
+  animation-duration: 13000ms;
+  animation-fill-mode: forwards;
+  padding: 1%;
+  margin-top: 10%;
+  margin-bottom: 7%;
+}
+.firstanswerbutton{
+  animation-name: apear;
+  animation-duration: 5000ms;
+  animation-fill-mode: forwards;
+  padding: 1%;
+  margin-top: 10%;
+  margin-bottom: 7%;
+}
+
+.buttonContainer{
+  display: flex;
+  flex-direction: row;
+}
+

@@ -1,0 +1,102 @@
+ .flip-opacity{
+  animation: opacity 6s ;
+ }
+
+ .flip-container {
+    perspective: 800px;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    animation: move 6s 1s cubic-bezier(.6,0,.4,1) infinite;
+  }
+  
+  .flip-container:hover .flipper {
+    transform: rotateY(180deg);
+  }
+  
+  .flipper {
+    transform-style: preserve-3d;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    animation: rotate 6s 1s cubic-bezier(.6,0,.4,1) infinite;
+  }
+  
+  @keyframes opacity{
+    0% {
+      opacity: 0;
+    }
+    100% {
+     opacity: 1;
+    }
+  }
+  
+  @keyframes rotate {
+    0% {transform: rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg)}
+    30% {transform: rotateX(0deg)
+    rotateY(0deg) rotateZ(-5deg)}
+    60%, 80% {transform: rotateX(360deg)
+    rotateY(180deg) rotateZ(-20deg)}
+    100% {transform: rotateX(0deg)
+    rotateY(180deg) rotateZ(0deg)}
+  }
+  
+  @keyframes move {
+    0% {top: 50px; right: 50px; transform: rotate(0deg)}
+    20% {top: calc(50% - 200px); right: calc(50% - 200px); width: 400px; height: 400px; transform: rotate(0deg)}
+    80% {top: calc(50% - 200px); right: calc(50% - 200px); width: 400px; height: 400px; transform: rotate(-15deg)}
+    100% {top: 50px; right: 50px; transform: rotate(0deg)}
+  }
+  
+  .front,
+  .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 95%;
+    width: 95%;
+    padding: 20px;
+    font-size: 20px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+  }
+  
+  .front {
+    transform: rotateY(0deg);
+    background: url(https://zupimages.net/up/21/34/hzqy.png) no-repeat 0 0 / cover;
+  }
+  
+  .back {
+    transform: rotateY(180deg);
+    background: url(https://zupimages.net/up/21/34/zqhs.jpg) no-repeat 0 0 / cover;
+  }
+  @media screen and (min-width:375px) and (max-width: 736px) {
+  .front,
+  .back {
+    backface-visibility: hidden;
+    position:absolute;
+    top: 0;
+    height: 90%;
+    width: 88%;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-right: 150px;
+  } 
+
+  .front {
+    transform: rotateY(0deg);
+    background: url(https://zupimages.net/up/21/34/hzqy.png) no-repeat 0 0 / cover;
+    margin-left: 15px;
+    margin-right: 20px;
+  }
+  
+  .back {
+    transform: rotateY(180deg);
+    background: url(https://zupimages.net/up/21/34/zqhs.jpg) no-repeat 0 0 / cover;
+    background-size: 85% 85%;
+  }
+  }
