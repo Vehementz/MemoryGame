@@ -2,15 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;1,300&display=swap');
 
 .memorygame_title {
-  margin: 4rem 0 4rem 0;
-  color: #5CBE7D;
+  padding: 4rem 0 4rem 0;
+  /* color: #5CBE7D; */
+  color: black;
   text-align: center;
   font-family: "Raleway", sans-serif;
 }
-
+/* 
 .sub_header {
   padding: 5px;
-  color: #5CBE7D;
+  color: black;
   font-size: 20px;
   font-weight: 800;
   justify-content: center;
@@ -18,7 +19,7 @@
   flex-direction: column;
 }
 
-
+ */
 
 .number_turn {
   text-transform: uppercase;
@@ -36,7 +37,7 @@
 }
 
 .memorygame_body {
-  background: white;
+  background: rgb(245, 234, 234);
   height: 100%;
   text-align: center;
 }
@@ -73,7 +74,8 @@
   flex-shrink: 0;
   width: 100%;
   height: 100%;
-  background-color: #5CBE7D;
+  background: rgb(36, 35, 35);
+  color: white;
 }
 
 .header_card_button:hover .memory_base_txt {
@@ -218,3 +220,4 @@
     margin-left: 8vw;
   }
 } 
+
