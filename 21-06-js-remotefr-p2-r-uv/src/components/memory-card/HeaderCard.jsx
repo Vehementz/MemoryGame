@@ -15,8 +15,8 @@ const HeaderCard = ({ moves, bestScore, handleRestart }) => {
           {localStorage.getItem("bestScore") && (
           <div className="btn-group-vertical shadow">
               
-            <button type="button btn-success" class="btn btn-success px-4">Retournements : <Badge bg="light text-success">{moves}</Badge></button>
-            <button type="button btn-success" class="btn btn-success px-4 btn-outline-secondary text-white">Meilleur Score : <Badge bg="light text-success" >{bestScore}</Badge></button>
+            <button type="button btn-success" class="btn btn-dark px-4">Retournements : <Badge bg="light text-dark">{moves}</Badge></button>
+            <button type="button btn-success" class="btn btn-dark px-4 btn-outline-secondary text-white">Meilleur Score : <Badge bg="light text-dark" >{bestScore}</Badge></button>
 
           </div>
           
